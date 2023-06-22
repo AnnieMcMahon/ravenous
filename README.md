@@ -12,14 +12,17 @@ Build a restaurant recommendation website that allows users to search for local 
 * Yelp API
 
 ## Features
+* The website will generate a list of restaurant recommendations from Yelp
+* Restaurant information will include image, name, address, category, rating, and review count
 * Users can scroll up and down to navigate through its content
 * Users can search for recommendations by location or by keywords
-* The website generates a list of restaurant data (image, name, address, category, rating, and review count)from Yelp
+* Users can sort results by Best Match, Highest Rated, or Most Reviewed
+
 
 ## Future Work
 TBD
 
 ## Links
-Web page: [https://anniemcmahon.github.io/ravenous/](https://anniemcmahon.github.io/ravenous/).
+Web page: TBD
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

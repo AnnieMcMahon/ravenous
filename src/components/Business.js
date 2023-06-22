@@ -12,14 +12,14 @@ const business = {
 
 function Business() {
   return (
-    <div class='restaurant-card'>
-      <img class='image' src={business.img} alt='pizzeria'/>
-      <div class='info'>
-      <p class='name'>{business.name}</p>
-      <p class='address'>{business.address}</p>
-      <p class='category'>{business.category}</p>
-      <p class='rating'>{business.rating}</p>
-      <p class='reviews'>{business.reviews}</p>
+    <div className='restaurant-card'>
+      <img className='image' src={business.img} alt='pizzeria'/>
+      <div className='info'>
+      <p className='name'>{business.name}</p>
+      <p className='address'>{business.address}</p>
+      <p className='category'>{business.category}</p>
+      <p className='rating'>{business.rating}</p>
+      <p className='reviews'>{business.reviews}</p>
       </div>
     </div>
   );

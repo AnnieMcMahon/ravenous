@@ -1,13 +1,25 @@
 .App {
   text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)) , url('./components/images/searchbar-background.jpg');
+  background-size: cover;
+  font-family: Questrial;
 }
 
-.App-header {
+header {
   background-color: rgb(182, 152, 17);
-  min-height: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 1rem;
   color: white;
 }
+
+footer {
+  min-height: 3rem;
+}
+
+h1 {
+  margin: 0.7rem;
+  letter-spacing: 0.2rem;
+}
+

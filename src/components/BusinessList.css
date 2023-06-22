@@ -1,0 +1,11 @@
+#business-list {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 2rem auto;
+  padding: 1rem 5rem;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: white;
+}
