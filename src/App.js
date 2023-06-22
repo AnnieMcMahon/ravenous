@@ -8,10 +8,10 @@ function App() {
       <header>
         <h1>Ravenous</h1>
       </header>
-      <body>
+      <main>
         <SearchBar />
         <BusinessList />
-      </body>
+      </main>
       <footer>
         
       </footer>

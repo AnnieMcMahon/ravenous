@@ -7,9 +7,22 @@
   justify-content: center;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+}
+
+
 #sort-options {
   margin: 1rem auto;
 }
+
+
 
 .sort-choice {
   margin: 0 2rem;
@@ -22,6 +35,9 @@
   cursor: pointer;
   color: rgb(182, 152, 17);
 }
+
+
+
 
 hr {
   margin: 1.5rem auto;
