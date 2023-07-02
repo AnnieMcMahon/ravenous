@@ -6,7 +6,7 @@ function BusinessList(prop) {
   return (
     <div id="business-list">
       {prop.list.map(business => {
-        return <Business info={business}/>;
+        return <Business info={business} key={business.id}/>;
       })}
     </div>
   );
