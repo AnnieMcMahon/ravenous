@@ -22,22 +22,22 @@ li {
   margin: 1rem auto;
 }
 
-
-
-.sort-choice {
+#sort-options li {
   margin: 0 2rem;
   color: white;
   font-size: 1rem;
   opacity: 75%;
 }
 
-.sort-choice:hover {
+#sort-options li:hover {
   cursor: pointer;
   color: rgb(182, 152, 17);
 }
 
-
-
+.active {
+  color: rgb(182, 152, 17) !important;
+  font-weight: bold;
+}
 
 hr {
   margin: 1.5rem auto;
