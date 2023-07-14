@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import './SearchBar.css';
+import getSuggestions from '../utils/yelp';
 
-function SearchBar() {
+function SearchBar({searchYelp}) {
   const [location, setLocation] = useState(null);
   const [keyword, setKeyword] = useState(null);
-  const [sort, setSort] = useState("");
+  const [sort, setSort] = useState("best_match");
 
   const sortChoices = [
     {id: "best_match", choice: "Best Match"},
@@ -20,8 +21,9 @@ function SearchBar() {
     setKeyword(event.target.value);
   };
 
-  const handleSubmit = () => {
-    console.log(`Location: ${location} Keyword: ${keyword}`);
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    searchYelp(keyword, location, sort);
   };
 
   return (
