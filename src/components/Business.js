@@ -9,8 +9,8 @@ function Business(prop) {
       <p className='name'>{prop.info.name}</p>
       <p className='address'>{prop.info.address}</p>
       <p className='category'>{prop.info.category}</p>
-      <p className='rating'>{prop.info.rating}</p>
-      <p className='reviews'>{prop.info.reviews}</p>
+      <p className='rating'>{prop.info.rating} stars</p>
+      <p className='reviews'>{prop.info.reviews} reviews</p>
       </div>
     </div>
   );
