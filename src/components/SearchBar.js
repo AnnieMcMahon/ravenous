@@ -12,6 +12,10 @@ function SearchBar({ searchYelp }) {
     { id: "review_count", choice: "Most Reviewed" }
   ];
 
+  const handleSortChange = (choice) => {
+    setSort(choice);
+  }
+
   const handleLocationChange = (event) => {
     let choice = event.target.value;
     if (!choice) {
@@ -37,7 +41,7 @@ function SearchBar({ searchYelp }) {
     <div id="search-bar">
       <ul id="sort-options">
         {sortChoices.map((choice) => (
-          <li key={choice.id} value={choice.id} onClick={() => setSort(choice.id)} className={sort === choice.id ? "active" : ""}>{choice.choice}</li>
+          <li key={choice.id} value={choice.id} onClick={() => handleSortChange(choice.id)} className={sort === choice.id ? "active" : ""}>{choice.choice}</li>
         ))}
       </ul>
       <hr />
