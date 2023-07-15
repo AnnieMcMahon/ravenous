@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import BusinessList from './components/BusinessList';
 import SearchBar from './components/SearchBar';
 import getSuggestions from './utils/yelp';
@@ -11,6 +11,10 @@ function App() {
     const suggestions = await getSuggestions(keyword, location, sort);
     setBusinesses(suggestions);
   };
+
+  useEffect(() => {
+    searchYelp("food", "US", "best_match");
+  }, []);
 
   return (
     <div className="App">
