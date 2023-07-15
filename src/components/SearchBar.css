@@ -25,8 +25,8 @@ li {
 #sort-options li {
   margin: 0 2rem;
   color: white;
-  font-size: 1rem;
-  opacity: 75%;
+  font-size: 1.1rem;
+  opacity: 80%;
 }
 
 #sort-options li:hover {
