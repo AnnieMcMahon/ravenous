@@ -1,8 +1,8 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
-import BusinessList from './components/BusinessList';
-import SearchBar from './components/SearchBar';
-import getSuggestions from './utils/yelp';
+import BusinessList from '../BusinessList/BusinessList';
+import SearchBar from '../SearchBar/SearchBar';
+import getSuggestions from '../../utils/yelp';
 
 function App() {
   const [businesses, setBusinesses ] = useState([]);

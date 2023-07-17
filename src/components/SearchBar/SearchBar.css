@@ -7,22 +7,14 @@
   justify-content: center;
 }
 
-ul {
+#sort-options {
   list-style-type: none;
-  margin: 0;
+  margin: 1rem auto;
   padding: 0;
 }
 
-li {
-  display: inline;
-}
-
-
-#sort-options {
-  margin: 1rem auto;
-}
-
 #sort-options li {
+  display: inline;
   margin: 0 2rem;
   color: white;
   font-size: 1.1rem;
@@ -73,5 +65,13 @@ hr {
 #submit:hover {
   cursor: pointer;
   background-color:rgb(81, 67, 2);
+}
+
+@media only screen and (max-width: 480px) {
+  #sort-options li {
+    display: block;
+  }
+
+
 }
 
