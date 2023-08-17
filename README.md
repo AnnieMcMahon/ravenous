@@ -19,6 +19,6 @@ Build a restaurant recommendation website that allows users to search for local 
 
 ## Links
 Web page: [https://ravenous-api-annie.netlify.app/](https://ravenous-api-annie.netlify.app/)
-To use this app, the user must temporarily unlock access to the CORS demo by clicking on [https://cors-anywhere.herokuapp.com/corsdemo] (https://cors-anywhere.herokuapp.com/corsdemo)
+To use this app, the user must temporarily unlock access to the CORS demo by clicking on [https://cors-anywhere.herokuapp.com/corsdemo](https://cors-anywhere.herokuapp.com/corsdemo)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
