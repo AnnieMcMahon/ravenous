@@ -13,6 +13,12 @@ function App() {
   };
 
   useEffect(() => {
+    if (window.confirm("To use this app, you must temporarily unlock access to the CORS demo. Click OK to proceed. Alternatively, please visit https://cors-anywhere.herokuapp.com/corsdemo and click on the gray button.")) {
+      window.open("https://cors-anywhere.herokuapp.com/corsdemo", "_blank");
+    };
+  }, []);
+
+  useEffect(() => {
     searchYelp("food", "US", "best_match");
   }, []);
 
