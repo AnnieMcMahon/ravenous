@@ -23,7 +23,8 @@ const getSuggestions = async (keyword, location, sort) => {
         address: `${business.location.display_address[0]}, ${business.location.display_address[1]}`,
         category: business.categories[0].title,
         rating: business.rating,
-        reviews: business.review_count
+        reviews: business.review_count,
+        url: business.url
       }));
       return results;
     }

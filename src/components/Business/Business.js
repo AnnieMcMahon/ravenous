@@ -4,7 +4,9 @@ import './Business.css';
 function Business(prop) {
   return (
     <div className='restaurant-card'>
-      <img className='image' src={prop.info.img} alt='pizzeria'/>
+      <a href={prop.info.url} target="_blank">
+        <img className='image' src={prop.info.img} alt='restaurant image' />
+      </a>
       <div className='info'>
       <p className='name'>{prop.info.name}</p>
       <p className='address'>{prop.info.address}</p>
