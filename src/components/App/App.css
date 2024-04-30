@@ -23,3 +23,13 @@ h1 {
   letter-spacing: 0.2rem;
 }
 
+.message {
+  color: white;
+}
+
+.link {
+  color: teal;
+  font-weight: bold;
+}
+
+

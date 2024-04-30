@@ -6,23 +6,21 @@ import getSuggestions from "../../utils/yelp";
 
 function App() {
   const [businesses, setBusinesses] = useState([]);
+  const [showMessage, setShowMessage] = useState(false);
 
   const searchYelp = async (keyword, location, sort) => {
     const suggestions = await getSuggestions(keyword, location, sort);
     setBusinesses(suggestions);
+    if (!suggestions) {
+      setShowMessage(true);
+    }
   };
 
-  useEffect(() => {
-    if (!searchYelp("food", "US", "best_match")) {
-      if (
-        window.confirm(
-          "To use this app, you must temporarily unlock access to the CORS demo. Click OK to proceed. Alternatively, please visit https://cors-anywhere.herokuapp.com/corsdemo and click on the gray button."
-        )
-      ) {
-        window.open("https://cors-anywhere.herokuapp.com/corsdemo", "_blank");
-      }
-    }
-  }, []);
+  useEffect(() => searchYelp("food", "US", "best_match"), []);
+
+  const handleUnlockAccess = () => {
+    window.open("https://cors-anywhere.herokuapp.com/corsdemo", "_blank");
+  };
 
   return (
     <div className="App">
@@ -31,6 +29,18 @@ function App() {
       </header>
       <main>
         <SearchBar searchYelp={searchYelp} />
+        {showMessage && (
+          <div className="message">
+            <p>
+              To use this app, you must temporarily unlock access to the
+              demo. Click{" "}
+              <span className="link" onClick={handleUnlockAccess}>
+                here
+              </span>{" "}
+              to proceed.
+            </p>
+          </div>
+        )}
         <BusinessList businesses={businesses} />
       </main>
       <footer></footer>
